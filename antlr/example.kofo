@@ -1,0 +1,13 @@
+int x = 5
+print("x = ")
+println(x)
+
+println("***** ARITHMETIC *****")
+println(x + 1)
+println(5 + 3 * 2)
+println(6 / (3 - 1) + 2)
+
+println("***** ASSIGN *****")
+x = x * 3
+print("x = ")
+println(x)
