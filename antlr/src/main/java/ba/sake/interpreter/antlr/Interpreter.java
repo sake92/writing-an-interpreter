@@ -24,13 +24,13 @@ public class Interpreter extends KofoLangBaseVisitor<Object> {
     }
 
     @Override
-    public Object visitIdExpr(KofoLangParser.IdExprContext ctx) {
-        return symbolTable.get(ctx.getText());
+    public Object visitParensExpr(KofoLangParser.ParensExprContext ctx) {
+        return visitExpr(ctx.expr());
     }
 
     @Override
-    public Object visitParensExpr(KofoLangParser.ParensExprContext ctx) {
-        return visitExpr(ctx.expr());
+    public Object visitIdExpr(KofoLangParser.IdExprContext ctx) {
+        return symbolTable.get(ctx.getText());
     }
 
     @Override

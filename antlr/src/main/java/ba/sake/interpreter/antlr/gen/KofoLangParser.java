@@ -95,15 +95,15 @@ public class KofoLangParser extends Parser {
 	}
 
 	public static class ProgramContext extends ParserRuleContext {
+		public List<TerminalNode> NL() { return getTokens(KofoLangParser.NL); }
+		public TerminalNode NL(int i) {
+			return getToken(KofoLangParser.NL, i);
+		}
 		public List<StatementContext> statement() {
 			return getRuleContexts(StatementContext.class);
 		}
 		public StatementContext statement(int i) {
 			return getRuleContext(StatementContext.class,i);
-		}
-		public List<TerminalNode> NL() { return getTokens(KofoLangParser.NL); }
-		public TerminalNode NL(int i) {
-			return getToken(KofoLangParser.NL, i);
 		}
 		public ProgramContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -131,31 +131,45 @@ public class KofoLangParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(23); 
+			setState(19);
+			_errHandler.sync(this);
+			_la = _input.LA(1);
+			while (_la==NL) {
+				{
+				{
+				setState(16);
+				match(NL);
+				}
+				}
+				setState(21);
+				_errHandler.sync(this);
+				_la = _input.LA(1);
+			}
+			setState(29); 
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			do {
 				{
 				{
-				setState(16);
+				setState(22);
 				statement();
-				setState(20);
+				setState(26);
 				_errHandler.sync(this);
 				_la = _input.LA(1);
 				while (_la==NL) {
 					{
 					{
-					setState(17);
+					setState(23);
 					match(NL);
 					}
 					}
-					setState(22);
+					setState(28);
 					_errHandler.sync(this);
 					_la = _input.LA(1);
 				}
 				}
 				}
-				setState(25); 
+				setState(31); 
 				_errHandler.sync(this);
 				_la = _input.LA(1);
 			} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__1) | (1L << T__4) | (1L << T__5) | (1L << T__6) | (1L << ID))) != 0) );
@@ -208,35 +222,35 @@ public class KofoLangParser extends Parser {
 		StatementContext _localctx = new StatementContext(_ctx, getState());
 		enterRule(_localctx, 2, RULE_statement);
 		try {
-			setState(31);
+			setState(37);
 			_errHandler.sync(this);
 			switch (_input.LA(1)) {
 			case T__5:
 			case T__6:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(27);
+				setState(33);
 				declStatement();
 				}
 				break;
 			case ID:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(28);
+				setState(34);
 				assignStatement();
 				}
 				break;
 			case T__1:
 				enterOuterAlt(_localctx, 3);
 				{
-				setState(29);
+				setState(35);
 				printlnStatement();
 				}
 				break;
 			case T__4:
 				enterOuterAlt(_localctx, 4);
 				{
-				setState(30);
+				setState(36);
 				printStatement();
 				}
 				break;
@@ -289,13 +303,13 @@ public class KofoLangParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(33);
+			setState(39);
 			type();
-			setState(34);
+			setState(40);
 			((DeclStatementContext)_localctx).id = match(ID);
-			setState(35);
+			setState(41);
 			match(T__0);
-			setState(36);
+			setState(42);
 			expr(0);
 			}
 		}
@@ -341,11 +355,11 @@ public class KofoLangParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(38);
+			setState(44);
 			((AssignStatementContext)_localctx).id = match(ID);
-			setState(39);
+			setState(45);
 			match(T__0);
-			setState(40);
+			setState(46);
 			expr(0);
 			}
 		}
@@ -389,13 +403,13 @@ public class KofoLangParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(42);
+			setState(48);
 			match(T__1);
-			setState(43);
+			setState(49);
 			match(T__2);
-			setState(44);
+			setState(50);
 			expr(0);
-			setState(45);
+			setState(51);
 			match(T__3);
 			}
 		}
@@ -439,13 +453,13 @@ public class KofoLangParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(47);
+			setState(53);
 			match(T__4);
-			setState(48);
+			setState(54);
 			match(T__2);
-			setState(49);
+			setState(55);
 			expr(0);
-			setState(50);
+			setState(56);
 			match(T__3);
 			}
 		}
@@ -508,14 +522,14 @@ public class KofoLangParser extends Parser {
 		TypeContext _localctx = new TypeContext(_ctx, getState());
 		enterRule(_localctx, 12, RULE_type);
 		try {
-			setState(54);
+			setState(60);
 			_errHandler.sync(this);
 			switch (_input.LA(1)) {
 			case T__5:
 				_localctx = new IntTypeContext(_localctx);
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(52);
+				setState(58);
 				match(T__5);
 				}
 				break;
@@ -523,7 +537,7 @@ public class KofoLangParser extends Parser {
 				_localctx = new StringTypeContext(_localctx);
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(53);
+				setState(59);
 				match(T__6);
 				}
 				break;
@@ -690,7 +704,7 @@ public class KofoLangParser extends Parser {
 			int _alt;
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(64);
+			setState(70);
 			_errHandler.sync(this);
 			switch (_input.LA(1)) {
 			case INT:
@@ -699,7 +713,7 @@ public class KofoLangParser extends Parser {
 				_ctx = _localctx;
 				_prevctx = _localctx;
 
-				setState(57);
+				setState(63);
 				match(INT);
 				}
 				break;
@@ -708,7 +722,7 @@ public class KofoLangParser extends Parser {
 				_localctx = new StringExprContext(_localctx);
 				_ctx = _localctx;
 				_prevctx = _localctx;
-				setState(58);
+				setState(64);
 				match(STRING);
 				}
 				break;
@@ -717,7 +731,7 @@ public class KofoLangParser extends Parser {
 				_localctx = new IdExprContext(_localctx);
 				_ctx = _localctx;
 				_prevctx = _localctx;
-				setState(59);
+				setState(65);
 				match(ID);
 				}
 				break;
@@ -726,11 +740,11 @@ public class KofoLangParser extends Parser {
 				_localctx = new ParensExprContext(_localctx);
 				_ctx = _localctx;
 				_prevctx = _localctx;
-				setState(60);
+				setState(66);
 				match(T__2);
-				setState(61);
+				setState(67);
 				expr(0);
-				setState(62);
+				setState(68);
 				match(T__3);
 				}
 				break;
@@ -738,25 +752,25 @@ public class KofoLangParser extends Parser {
 				throw new NoViableAltException(this);
 			}
 			_ctx.stop = _input.LT(-1);
-			setState(74);
+			setState(80);
 			_errHandler.sync(this);
-			_alt = getInterpreter().adaptivePredict(_input,6,_ctx);
+			_alt = getInterpreter().adaptivePredict(_input,7,_ctx);
 			while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER ) {
 				if ( _alt==1 ) {
 					if ( _parseListeners!=null ) triggerExitRuleEvent();
 					_prevctx = _localctx;
 					{
-					setState(72);
+					setState(78);
 					_errHandler.sync(this);
-					switch ( getInterpreter().adaptivePredict(_input,5,_ctx) ) {
+					switch ( getInterpreter().adaptivePredict(_input,6,_ctx) ) {
 					case 1:
 						{
 						_localctx = new MulDivExprContext(new ExprContext(_parentctx, _parentState));
 						((MulDivExprContext)_localctx).left = _prevctx;
 						pushNewRecursionContext(_localctx, _startState, RULE_expr);
-						setState(66);
+						setState(72);
 						if (!(precpred(_ctx, 6))) throw new FailedPredicateException(this, "precpred(_ctx, 6)");
-						setState(67);
+						setState(73);
 						((MulDivExprContext)_localctx).op = _input.LT(1);
 						_la = _input.LA(1);
 						if ( !(_la==T__7 || _la==T__8) ) {
@@ -767,7 +781,7 @@ public class KofoLangParser extends Parser {
 							_errHandler.reportMatch(this);
 							consume();
 						}
-						setState(68);
+						setState(74);
 						((MulDivExprContext)_localctx).right = expr(7);
 						}
 						break;
@@ -776,9 +790,9 @@ public class KofoLangParser extends Parser {
 						_localctx = new AddSubExprContext(new ExprContext(_parentctx, _parentState));
 						((AddSubExprContext)_localctx).left = _prevctx;
 						pushNewRecursionContext(_localctx, _startState, RULE_expr);
-						setState(69);
+						setState(75);
 						if (!(precpred(_ctx, 5))) throw new FailedPredicateException(this, "precpred(_ctx, 5)");
-						setState(70);
+						setState(76);
 						((AddSubExprContext)_localctx).op = _input.LT(1);
 						_la = _input.LA(1);
 						if ( !(_la==T__9 || _la==T__10) ) {
@@ -789,16 +803,16 @@ public class KofoLangParser extends Parser {
 							_errHandler.reportMatch(this);
 							consume();
 						}
-						setState(71);
+						setState(77);
 						((AddSubExprContext)_localctx).right = expr(6);
 						}
 						break;
 					}
 					} 
 				}
-				setState(76);
+				setState(82);
 				_errHandler.sync(this);
-				_alt = getInterpreter().adaptivePredict(_input,6,_ctx);
+				_alt = getInterpreter().adaptivePredict(_input,7,_ctx);
 			}
 			}
 		}
@@ -831,27 +845,28 @@ public class KofoLangParser extends Parser {
 	}
 
 	public static final String _serializedATN =
-		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\22P\4\2\t\2\4\3\t"+
-		"\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\4\b\t\b\4\t\t\t\3\2\3\2\7\2\25\n\2"+
-		"\f\2\16\2\30\13\2\6\2\32\n\2\r\2\16\2\33\3\3\3\3\3\3\3\3\5\3\"\n\3\3\4"+
-		"\3\4\3\4\3\4\3\4\3\5\3\5\3\5\3\5\3\6\3\6\3\6\3\6\3\6\3\7\3\7\3\7\3\7\3"+
-		"\7\3\b\3\b\5\b9\n\b\3\t\3\t\3\t\3\t\3\t\3\t\3\t\3\t\5\tC\n\t\3\t\3\t\3"+
-		"\t\3\t\3\t\3\t\7\tK\n\t\f\t\16\tN\13\t\3\t\2\3\20\n\2\4\6\b\n\f\16\20"+
-		"\2\4\3\2\n\13\3\2\f\r\2R\2\31\3\2\2\2\4!\3\2\2\2\6#\3\2\2\2\b(\3\2\2\2"+
-		"\n,\3\2\2\2\f\61\3\2\2\2\168\3\2\2\2\20B\3\2\2\2\22\26\5\4\3\2\23\25\7"+
-		"\17\2\2\24\23\3\2\2\2\25\30\3\2\2\2\26\24\3\2\2\2\26\27\3\2\2\2\27\32"+
-		"\3\2\2\2\30\26\3\2\2\2\31\22\3\2\2\2\32\33\3\2\2\2\33\31\3\2\2\2\33\34"+
-		"\3\2\2\2\34\3\3\2\2\2\35\"\5\6\4\2\36\"\5\b\5\2\37\"\5\n\6\2 \"\5\f\7"+
-		"\2!\35\3\2\2\2!\36\3\2\2\2!\37\3\2\2\2! \3\2\2\2\"\5\3\2\2\2#$\5\16\b"+
-		"\2$%\7\20\2\2%&\7\3\2\2&\'\5\20\t\2\'\7\3\2\2\2()\7\20\2\2)*\7\3\2\2*"+
-		"+\5\20\t\2+\t\3\2\2\2,-\7\4\2\2-.\7\5\2\2./\5\20\t\2/\60\7\6\2\2\60\13"+
-		"\3\2\2\2\61\62\7\7\2\2\62\63\7\5\2\2\63\64\5\20\t\2\64\65\7\6\2\2\65\r"+
-		"\3\2\2\2\669\7\b\2\2\679\7\t\2\28\66\3\2\2\28\67\3\2\2\29\17\3\2\2\2:"+
-		";\b\t\1\2;C\7\21\2\2<C\7\22\2\2=C\7\20\2\2>?\7\5\2\2?@\5\20\t\2@A\7\6"+
-		"\2\2AC\3\2\2\2B:\3\2\2\2B<\3\2\2\2B=\3\2\2\2B>\3\2\2\2CL\3\2\2\2DE\f\b"+
-		"\2\2EF\t\2\2\2FK\5\20\t\tGH\f\7\2\2HI\t\3\2\2IK\5\20\t\bJD\3\2\2\2JG\3"+
-		"\2\2\2KN\3\2\2\2LJ\3\2\2\2LM\3\2\2\2M\21\3\2\2\2NL\3\2\2\2\t\26\33!8B"+
-		"JL";
+		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\22V\4\2\t\2\4\3\t"+
+		"\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\4\b\t\b\4\t\t\t\3\2\7\2\24\n\2\f\2"+
+		"\16\2\27\13\2\3\2\3\2\7\2\33\n\2\f\2\16\2\36\13\2\6\2 \n\2\r\2\16\2!\3"+
+		"\3\3\3\3\3\3\3\5\3(\n\3\3\4\3\4\3\4\3\4\3\4\3\5\3\5\3\5\3\5\3\6\3\6\3"+
+		"\6\3\6\3\6\3\7\3\7\3\7\3\7\3\7\3\b\3\b\5\b?\n\b\3\t\3\t\3\t\3\t\3\t\3"+
+		"\t\3\t\3\t\5\tI\n\t\3\t\3\t\3\t\3\t\3\t\3\t\7\tQ\n\t\f\t\16\tT\13\t\3"+
+		"\t\2\3\20\n\2\4\6\b\n\f\16\20\2\4\3\2\n\13\3\2\f\r\2Y\2\25\3\2\2\2\4\'"+
+		"\3\2\2\2\6)\3\2\2\2\b.\3\2\2\2\n\62\3\2\2\2\f\67\3\2\2\2\16>\3\2\2\2\20"+
+		"H\3\2\2\2\22\24\7\17\2\2\23\22\3\2\2\2\24\27\3\2\2\2\25\23\3\2\2\2\25"+
+		"\26\3\2\2\2\26\37\3\2\2\2\27\25\3\2\2\2\30\34\5\4\3\2\31\33\7\17\2\2\32"+
+		"\31\3\2\2\2\33\36\3\2\2\2\34\32\3\2\2\2\34\35\3\2\2\2\35 \3\2\2\2\36\34"+
+		"\3\2\2\2\37\30\3\2\2\2 !\3\2\2\2!\37\3\2\2\2!\"\3\2\2\2\"\3\3\2\2\2#("+
+		"\5\6\4\2$(\5\b\5\2%(\5\n\6\2&(\5\f\7\2\'#\3\2\2\2\'$\3\2\2\2\'%\3\2\2"+
+		"\2\'&\3\2\2\2(\5\3\2\2\2)*\5\16\b\2*+\7\20\2\2+,\7\3\2\2,-\5\20\t\2-\7"+
+		"\3\2\2\2./\7\20\2\2/\60\7\3\2\2\60\61\5\20\t\2\61\t\3\2\2\2\62\63\7\4"+
+		"\2\2\63\64\7\5\2\2\64\65\5\20\t\2\65\66\7\6\2\2\66\13\3\2\2\2\678\7\7"+
+		"\2\289\7\5\2\29:\5\20\t\2:;\7\6\2\2;\r\3\2\2\2<?\7\b\2\2=?\7\t\2\2><\3"+
+		"\2\2\2>=\3\2\2\2?\17\3\2\2\2@A\b\t\1\2AI\7\21\2\2BI\7\22\2\2CI\7\20\2"+
+		"\2DE\7\5\2\2EF\5\20\t\2FG\7\6\2\2GI\3\2\2\2H@\3\2\2\2HB\3\2\2\2HC\3\2"+
+		"\2\2HD\3\2\2\2IR\3\2\2\2JK\f\b\2\2KL\t\2\2\2LQ\5\20\t\tMN\f\7\2\2NO\t"+
+		"\3\2\2OQ\5\20\t\bPJ\3\2\2\2PM\3\2\2\2QT\3\2\2\2RP\3\2\2\2RS\3\2\2\2S\21"+
+		"\3\2\2\2TR\3\2\2\2\n\25\34!\'>HPR";
 	public static final ATN _ATN =
 		new ATNDeserializer().deserialize(_serializedATN.toCharArray());
 	static {

@@ -1,19 +1,19 @@
 grammar KofoLang;
 
 /* PARSER */
-program: (statement NL*) + ;
+program: NL* (statement NL*)+ ;
 
 statement
-    : declStatement
-    | assignStatement
-    | printlnStatement
+    : printlnStatement
     | printStatement
+    | declStatement
+    | assignStatement
 ;
 
-declStatement       : type id=ID '=' expr;
-assignStatement     : id=ID '=' expr;
 printlnStatement    : 'println' '(' expr ')' ;
 printStatement      : 'print' '(' expr ')' ;
+declStatement       : type id=ID '=' expr;
+assignStatement     : id=ID '=' expr;
 
 type
     : 'int'     # IntType

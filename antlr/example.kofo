@@ -1,4 +1,6 @@
+
 int x = 5
+
 print("x = ")
 println(x)
 
