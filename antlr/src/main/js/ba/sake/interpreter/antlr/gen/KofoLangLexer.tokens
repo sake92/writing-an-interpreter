@@ -14,11 +14,11 @@ NL=13
 ID=14
 INT=15
 STRING=16
-'='=1
-'println'=2
-'('=3
-')'=4
-'print'=5
+'println'=1
+'('=2
+')'=3
+'print'=4
+'='=5
 'int'=6
 'string'=7
 '*'=8

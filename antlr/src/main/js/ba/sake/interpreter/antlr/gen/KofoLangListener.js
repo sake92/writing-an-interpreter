@@ -29,24 +29,6 @@ KofoLangListener.prototype.exitStatement = function(ctx) {
 };
 
 
-// Enter a parse tree produced by KofoLangParser#declStatement.
-KofoLangListener.prototype.enterDeclStatement = function(ctx) {
-};
-
-// Exit a parse tree produced by KofoLangParser#declStatement.
-KofoLangListener.prototype.exitDeclStatement = function(ctx) {
-};
-
-
-// Enter a parse tree produced by KofoLangParser#assignStatement.
-KofoLangListener.prototype.enterAssignStatement = function(ctx) {
-};
-
-// Exit a parse tree produced by KofoLangParser#assignStatement.
-KofoLangListener.prototype.exitAssignStatement = function(ctx) {
-};
-
-
 // Enter a parse tree produced by KofoLangParser#printlnStatement.
 KofoLangListener.prototype.enterPrintlnStatement = function(ctx) {
 };
@@ -62,6 +44,24 @@ KofoLangListener.prototype.enterPrintStatement = function(ctx) {
 
 // Exit a parse tree produced by KofoLangParser#printStatement.
 KofoLangListener.prototype.exitPrintStatement = function(ctx) {
+};
+
+
+// Enter a parse tree produced by KofoLangParser#declStatement.
+KofoLangListener.prototype.enterDeclStatement = function(ctx) {
+};
+
+// Exit a parse tree produced by KofoLangParser#declStatement.
+KofoLangListener.prototype.exitDeclStatement = function(ctx) {
+};
+
+
+// Enter a parse tree produced by KofoLangParser#assignStatement.
+KofoLangListener.prototype.enterAssignStatement = function(ctx) {
+};
+
+// Exit a parse tree produced by KofoLangParser#assignStatement.
+KofoLangListener.prototype.exitAssignStatement = function(ctx) {
 };
 
 

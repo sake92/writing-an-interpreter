@@ -15,16 +15,16 @@ var serializedATN = ["\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964",
     "\u0002\f\u0002\u000e\u0002\u001e\u000b\u0002\u0006\u0002 \n\u0002\r",
     "\u0002\u000e\u0002!\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003",
     "\u0005\u0003(\n\u0003\u0003\u0004\u0003\u0004\u0003\u0004\u0003\u0004",
-    "\u0003\u0004\u0003\u0005\u0003\u0005\u0003\u0005\u0003\u0005\u0003\u0006",
-    "\u0003\u0006\u0003\u0006\u0003\u0006\u0003\u0006\u0003\u0007\u0003\u0007",
+    "\u0003\u0004\u0003\u0005\u0003\u0005\u0003\u0005\u0003\u0005\u0003\u0005",
+    "\u0003\u0006\u0003\u0006\u0003\u0006\u0003\u0006\u0003\u0006\u0003\u0007",
     "\u0003\u0007\u0003\u0007\u0003\u0007\u0003\b\u0003\b\u0005\b?\n\b\u0003",
     "\t\u0003\t\u0003\t\u0003\t\u0003\t\u0003\t\u0003\t\u0003\t\u0005\tI",
     "\n\t\u0003\t\u0003\t\u0003\t\u0003\t\u0003\t\u0003\t\u0007\tQ\n\t\f",
     "\t\u000e\tT\u000b\t\u0003\t\u0002\u0003\u0010\n\u0002\u0004\u0006\b",
     "\n\f\u000e\u0010\u0002\u0004\u0003\u0002\n\u000b\u0003\u0002\f\r\u0002",
     "Y\u0002\u0015\u0003\u0002\u0002\u0002\u0004\'\u0003\u0002\u0002\u0002",
-    "\u0006)\u0003\u0002\u0002\u0002\b.\u0003\u0002\u0002\u0002\n2\u0003",
-    "\u0002\u0002\u0002\f7\u0003\u0002\u0002\u0002\u000e>\u0003\u0002\u0002",
+    "\u0006)\u0003\u0002\u0002\u0002\b.\u0003\u0002\u0002\u0002\n3\u0003",
+    "\u0002\u0002\u0002\f8\u0003\u0002\u0002\u0002\u000e>\u0003\u0002\u0002",
     "\u0002\u0010H\u0003\u0002\u0002\u0002\u0012\u0014\u0007\u000f\u0002",
     "\u0002\u0013\u0012\u0003\u0002\u0002\u0002\u0014\u0017\u0003\u0002\u0002",
     "\u0002\u0015\u0013\u0003\u0002\u0002\u0002\u0015\u0016\u0003\u0002\u0002",
@@ -35,21 +35,21 @@ var serializedATN = ["\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964",
     "\u0002\u001d \u0003\u0002\u0002\u0002\u001e\u001c\u0003\u0002\u0002",
     "\u0002\u001f\u0018\u0003\u0002\u0002\u0002 !\u0003\u0002\u0002\u0002",
     "!\u001f\u0003\u0002\u0002\u0002!\"\u0003\u0002\u0002\u0002\"\u0003\u0003",
-    "\u0002\u0002\u0002#(\u0005\n\u0006\u0002$(\u0005\f\u0007\u0002%(\u0005",
-    "\u0006\u0004\u0002&(\u0005\b\u0005\u0002\'#\u0003\u0002\u0002\u0002",
+    "\u0002\u0002\u0002#(\u0005\u0006\u0004\u0002$(\u0005\b\u0005\u0002%",
+    "(\u0005\n\u0006\u0002&(\u0005\f\u0007\u0002\'#\u0003\u0002\u0002\u0002",
     "\'$\u0003\u0002\u0002\u0002\'%\u0003\u0002\u0002\u0002\'&\u0003\u0002",
-    "\u0002\u0002(\u0005\u0003\u0002\u0002\u0002)*\u0005\u000e\b\u0002*+",
-    "\u0007\u0010\u0002\u0002+,\u0007\u0003\u0002\u0002,-\u0005\u0010\t\u0002",
-    "-\u0007\u0003\u0002\u0002\u0002./\u0007\u0010\u0002\u0002/0\u0007\u0003",
-    "\u0002\u000201\u0005\u0010\t\u00021\t\u0003\u0002\u0002\u000223\u0007",
-    "\u0004\u0002\u000234\u0007\u0005\u0002\u000245\u0005\u0010\t\u00025",
-    "6\u0007\u0006\u0002\u00026\u000b\u0003\u0002\u0002\u000278\u0007\u0007",
-    "\u0002\u000289\u0007\u0005\u0002\u00029:\u0005\u0010\t\u0002:;\u0007",
-    "\u0006\u0002\u0002;\r\u0003\u0002\u0002\u0002<?\u0007\b\u0002\u0002",
+    "\u0002\u0002(\u0005\u0003\u0002\u0002\u0002)*\u0007\u0003\u0002\u0002",
+    "*+\u0007\u0004\u0002\u0002+,\u0005\u0010\t\u0002,-\u0007\u0005\u0002",
+    "\u0002-\u0007\u0003\u0002\u0002\u0002./\u0007\u0006\u0002\u0002/0\u0007",
+    "\u0004\u0002\u000201\u0005\u0010\t\u000212\u0007\u0005\u0002\u00022",
+    "\t\u0003\u0002\u0002\u000234\u0005\u000e\b\u000245\u0007\u0010\u0002",
+    "\u000256\u0007\u0007\u0002\u000267\u0005\u0010\t\u00027\u000b\u0003",
+    "\u0002\u0002\u000289\u0007\u0010\u0002\u00029:\u0007\u0007\u0002\u0002",
+    ":;\u0005\u0010\t\u0002;\r\u0003\u0002\u0002\u0002<?\u0007\b\u0002\u0002",
     "=?\u0007\t\u0002\u0002><\u0003\u0002\u0002\u0002>=\u0003\u0002\u0002",
     "\u0002?\u000f\u0003\u0002\u0002\u0002@A\b\t\u0001\u0002AI\u0007\u0011",
     "\u0002\u0002BI\u0007\u0012\u0002\u0002CI\u0007\u0010\u0002\u0002DE\u0007",
-    "\u0005\u0002\u0002EF\u0005\u0010\t\u0002FG\u0007\u0006\u0002\u0002G",
+    "\u0004\u0002\u0002EF\u0005\u0010\t\u0002FG\u0007\u0005\u0002\u0002G",
     "I\u0003\u0002\u0002\u0002H@\u0003\u0002\u0002\u0002HB\u0003\u0002\u0002",
     "\u0002HC\u0003\u0002\u0002\u0002HD\u0003\u0002\u0002\u0002IR\u0003\u0002",
     "\u0002\u0002JK\f\b\u0002\u0002KL\t\u0002\u0002\u0002LQ\u0005\u0010\t",
@@ -65,14 +65,14 @@ var decisionsToDFA = atn.decisionToState.map( function(ds, index) { return new a
 
 var sharedContextCache = new antlr4.PredictionContextCache();
 
-var literalNames = [ null, "'='", "'println'", "'('", "')'", "'print'", 
+var literalNames = [ null, "'println'", "'('", "')'", "'print'", "'='", 
                      "'int'", "'string'", "'*'", "'/'", "'+'", "'-'" ];
 
 var symbolicNames = [ null, null, null, null, null, null, null, null, null, 
                       null, null, null, "WS", "NL", "ID", "INT", "STRING" ];
 
-var ruleNames =  [ "program", "statement", "declStatement", "assignStatement", 
-                   "printlnStatement", "printStatement", "type", "expr" ];
+var ruleNames =  [ "program", "statement", "printlnStatement", "printStatement", 
+                   "declStatement", "assignStatement", "type", "expr" ];
 
 function KofoLangParser (input) {
 	antlr4.Parser.call(this, input);
@@ -112,10 +112,10 @@ KofoLangParser.STRING = 16;
 
 KofoLangParser.RULE_program = 0;
 KofoLangParser.RULE_statement = 1;
-KofoLangParser.RULE_declStatement = 2;
-KofoLangParser.RULE_assignStatement = 3;
-KofoLangParser.RULE_printlnStatement = 4;
-KofoLangParser.RULE_printStatement = 5;
+KofoLangParser.RULE_printlnStatement = 2;
+KofoLangParser.RULE_printStatement = 3;
+KofoLangParser.RULE_declStatement = 4;
+KofoLangParser.RULE_assignStatement = 5;
 KofoLangParser.RULE_type = 6;
 KofoLangParser.RULE_expr = 7;
 
@@ -220,7 +220,7 @@ KofoLangParser.prototype.program = function() {
             this.state = 31; 
             this._errHandler.sync(this);
             _la = this._input.LA(1);
-        } while((((_la) & ~0x1f) == 0 && ((1 << _la) & ((1 << KofoLangParser.T__1) | (1 << KofoLangParser.T__4) | (1 << KofoLangParser.T__5) | (1 << KofoLangParser.T__6) | (1 << KofoLangParser.ID))) !== 0));
+        } while((((_la) & ~0x1f) == 0 && ((1 << _la) & ((1 << KofoLangParser.T__0) | (1 << KofoLangParser.T__3) | (1 << KofoLangParser.T__5) | (1 << KofoLangParser.T__6) | (1 << KofoLangParser.ID))) !== 0));
     } catch (re) {
     	if(re instanceof antlr4.error.RecognitionException) {
 	        localctx.exception = re;
@@ -301,12 +301,12 @@ KofoLangParser.prototype.statement = function() {
         this.state = 37;
         this._errHandler.sync(this);
         switch(this._input.LA(1)) {
-        case KofoLangParser.T__1:
+        case KofoLangParser.T__0:
             this.enterOuterAlt(localctx, 1);
             this.state = 33;
             this.printlnStatement();
             break;
-        case KofoLangParser.T__4:
+        case KofoLangParser.T__3:
             this.enterOuterAlt(localctx, 2);
             this.state = 34;
             this.printStatement();
@@ -325,6 +325,154 @@ KofoLangParser.prototype.statement = function() {
         default:
             throw new antlr4.error.NoViableAltException(this);
         }
+    } catch (re) {
+    	if(re instanceof antlr4.error.RecognitionException) {
+	        localctx.exception = re;
+	        this._errHandler.reportError(this, re);
+	        this._errHandler.recover(this, re);
+	    } else {
+	    	throw re;
+	    }
+    } finally {
+        this.exitRule();
+    }
+    return localctx;
+};
+
+
+function PrintlnStatementContext(parser, parent, invokingState) {
+	if(parent===undefined) {
+	    parent = null;
+	}
+	if(invokingState===undefined || invokingState===null) {
+		invokingState = -1;
+	}
+	antlr4.ParserRuleContext.call(this, parent, invokingState);
+    this.parser = parser;
+    this.ruleIndex = KofoLangParser.RULE_printlnStatement;
+    return this;
+}
+
+PrintlnStatementContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
+PrintlnStatementContext.prototype.constructor = PrintlnStatementContext;
+
+PrintlnStatementContext.prototype.expr = function() {
+    return this.getTypedRuleContext(ExprContext,0);
+};
+
+PrintlnStatementContext.prototype.enterRule = function(listener) {
+    if(listener instanceof KofoLangListener ) {
+        listener.enterPrintlnStatement(this);
+	}
+};
+
+PrintlnStatementContext.prototype.exitRule = function(listener) {
+    if(listener instanceof KofoLangListener ) {
+        listener.exitPrintlnStatement(this);
+	}
+};
+
+PrintlnStatementContext.prototype.accept = function(visitor) {
+    if ( visitor instanceof KofoLangVisitor ) {
+        return visitor.visitPrintlnStatement(this);
+    } else {
+        return visitor.visitChildren(this);
+    }
+};
+
+
+
+
+KofoLangParser.PrintlnStatementContext = PrintlnStatementContext;
+
+KofoLangParser.prototype.printlnStatement = function() {
+
+    var localctx = new PrintlnStatementContext(this, this._ctx, this.state);
+    this.enterRule(localctx, 4, KofoLangParser.RULE_printlnStatement);
+    try {
+        this.enterOuterAlt(localctx, 1);
+        this.state = 39;
+        this.match(KofoLangParser.T__0);
+        this.state = 40;
+        this.match(KofoLangParser.T__1);
+        this.state = 41;
+        this.expr(0);
+        this.state = 42;
+        this.match(KofoLangParser.T__2);
+    } catch (re) {
+    	if(re instanceof antlr4.error.RecognitionException) {
+	        localctx.exception = re;
+	        this._errHandler.reportError(this, re);
+	        this._errHandler.recover(this, re);
+	    } else {
+	    	throw re;
+	    }
+    } finally {
+        this.exitRule();
+    }
+    return localctx;
+};
+
+
+function PrintStatementContext(parser, parent, invokingState) {
+	if(parent===undefined) {
+	    parent = null;
+	}
+	if(invokingState===undefined || invokingState===null) {
+		invokingState = -1;
+	}
+	antlr4.ParserRuleContext.call(this, parent, invokingState);
+    this.parser = parser;
+    this.ruleIndex = KofoLangParser.RULE_printStatement;
+    return this;
+}
+
+PrintStatementContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
+PrintStatementContext.prototype.constructor = PrintStatementContext;
+
+PrintStatementContext.prototype.expr = function() {
+    return this.getTypedRuleContext(ExprContext,0);
+};
+
+PrintStatementContext.prototype.enterRule = function(listener) {
+    if(listener instanceof KofoLangListener ) {
+        listener.enterPrintStatement(this);
+	}
+};
+
+PrintStatementContext.prototype.exitRule = function(listener) {
+    if(listener instanceof KofoLangListener ) {
+        listener.exitPrintStatement(this);
+	}
+};
+
+PrintStatementContext.prototype.accept = function(visitor) {
+    if ( visitor instanceof KofoLangVisitor ) {
+        return visitor.visitPrintStatement(this);
+    } else {
+        return visitor.visitChildren(this);
+    }
+};
+
+
+
+
+KofoLangParser.PrintStatementContext = PrintStatementContext;
+
+KofoLangParser.prototype.printStatement = function() {
+
+    var localctx = new PrintStatementContext(this, this._ctx, this.state);
+    this.enterRule(localctx, 6, KofoLangParser.RULE_printStatement);
+    try {
+        this.enterOuterAlt(localctx, 1);
+        this.state = 44;
+        this.match(KofoLangParser.T__3);
+        this.state = 45;
+        this.match(KofoLangParser.T__1);
+        this.state = 46;
+        this.expr(0);
+        this.state = 47;
+        this.match(KofoLangParser.T__2);
     } catch (re) {
     	if(re instanceof antlr4.error.RecognitionException) {
 	        localctx.exception = re;
@@ -397,16 +545,16 @@ KofoLangParser.DeclStatementContext = DeclStatementContext;
 KofoLangParser.prototype.declStatement = function() {
 
     var localctx = new DeclStatementContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 4, KofoLangParser.RULE_declStatement);
+    this.enterRule(localctx, 8, KofoLangParser.RULE_declStatement);
     try {
         this.enterOuterAlt(localctx, 1);
-        this.state = 39;
+        this.state = 49;
         this.type();
-        this.state = 40;
+        this.state = 50;
         localctx.id = this.match(KofoLangParser.ID);
-        this.state = 41;
-        this.match(KofoLangParser.T__0);
-        this.state = 42;
+        this.state = 51;
+        this.match(KofoLangParser.T__4);
+        this.state = 52;
         this.expr(0);
     } catch (re) {
     	if(re instanceof antlr4.error.RecognitionException) {
@@ -476,163 +624,15 @@ KofoLangParser.AssignStatementContext = AssignStatementContext;
 KofoLangParser.prototype.assignStatement = function() {
 
     var localctx = new AssignStatementContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 6, KofoLangParser.RULE_assignStatement);
+    this.enterRule(localctx, 10, KofoLangParser.RULE_assignStatement);
     try {
         this.enterOuterAlt(localctx, 1);
-        this.state = 44;
-        localctx.id = this.match(KofoLangParser.ID);
-        this.state = 45;
-        this.match(KofoLangParser.T__0);
-        this.state = 46;
-        this.expr(0);
-    } catch (re) {
-    	if(re instanceof antlr4.error.RecognitionException) {
-	        localctx.exception = re;
-	        this._errHandler.reportError(this, re);
-	        this._errHandler.recover(this, re);
-	    } else {
-	    	throw re;
-	    }
-    } finally {
-        this.exitRule();
-    }
-    return localctx;
-};
-
-
-function PrintlnStatementContext(parser, parent, invokingState) {
-	if(parent===undefined) {
-	    parent = null;
-	}
-	if(invokingState===undefined || invokingState===null) {
-		invokingState = -1;
-	}
-	antlr4.ParserRuleContext.call(this, parent, invokingState);
-    this.parser = parser;
-    this.ruleIndex = KofoLangParser.RULE_printlnStatement;
-    return this;
-}
-
-PrintlnStatementContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
-PrintlnStatementContext.prototype.constructor = PrintlnStatementContext;
-
-PrintlnStatementContext.prototype.expr = function() {
-    return this.getTypedRuleContext(ExprContext,0);
-};
-
-PrintlnStatementContext.prototype.enterRule = function(listener) {
-    if(listener instanceof KofoLangListener ) {
-        listener.enterPrintlnStatement(this);
-	}
-};
-
-PrintlnStatementContext.prototype.exitRule = function(listener) {
-    if(listener instanceof KofoLangListener ) {
-        listener.exitPrintlnStatement(this);
-	}
-};
-
-PrintlnStatementContext.prototype.accept = function(visitor) {
-    if ( visitor instanceof KofoLangVisitor ) {
-        return visitor.visitPrintlnStatement(this);
-    } else {
-        return visitor.visitChildren(this);
-    }
-};
-
-
-
-
-KofoLangParser.PrintlnStatementContext = PrintlnStatementContext;
-
-KofoLangParser.prototype.printlnStatement = function() {
-
-    var localctx = new PrintlnStatementContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 8, KofoLangParser.RULE_printlnStatement);
-    try {
-        this.enterOuterAlt(localctx, 1);
-        this.state = 48;
-        this.match(KofoLangParser.T__1);
-        this.state = 49;
-        this.match(KofoLangParser.T__2);
-        this.state = 50;
-        this.expr(0);
-        this.state = 51;
-        this.match(KofoLangParser.T__3);
-    } catch (re) {
-    	if(re instanceof antlr4.error.RecognitionException) {
-	        localctx.exception = re;
-	        this._errHandler.reportError(this, re);
-	        this._errHandler.recover(this, re);
-	    } else {
-	    	throw re;
-	    }
-    } finally {
-        this.exitRule();
-    }
-    return localctx;
-};
-
-
-function PrintStatementContext(parser, parent, invokingState) {
-	if(parent===undefined) {
-	    parent = null;
-	}
-	if(invokingState===undefined || invokingState===null) {
-		invokingState = -1;
-	}
-	antlr4.ParserRuleContext.call(this, parent, invokingState);
-    this.parser = parser;
-    this.ruleIndex = KofoLangParser.RULE_printStatement;
-    return this;
-}
-
-PrintStatementContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
-PrintStatementContext.prototype.constructor = PrintStatementContext;
-
-PrintStatementContext.prototype.expr = function() {
-    return this.getTypedRuleContext(ExprContext,0);
-};
-
-PrintStatementContext.prototype.enterRule = function(listener) {
-    if(listener instanceof KofoLangListener ) {
-        listener.enterPrintStatement(this);
-	}
-};
-
-PrintStatementContext.prototype.exitRule = function(listener) {
-    if(listener instanceof KofoLangListener ) {
-        listener.exitPrintStatement(this);
-	}
-};
-
-PrintStatementContext.prototype.accept = function(visitor) {
-    if ( visitor instanceof KofoLangVisitor ) {
-        return visitor.visitPrintStatement(this);
-    } else {
-        return visitor.visitChildren(this);
-    }
-};
-
-
-
-
-KofoLangParser.PrintStatementContext = PrintStatementContext;
-
-KofoLangParser.prototype.printStatement = function() {
-
-    var localctx = new PrintStatementContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 10, KofoLangParser.RULE_printStatement);
-    try {
-        this.enterOuterAlt(localctx, 1);
-        this.state = 53;
-        this.match(KofoLangParser.T__4);
         this.state = 54;
-        this.match(KofoLangParser.T__2);
+        localctx.id = this.match(KofoLangParser.ID);
         this.state = 55;
-        this.expr(0);
+        this.match(KofoLangParser.T__4);
         this.state = 56;
-        this.match(KofoLangParser.T__3);
+        this.expr(0);
     } catch (re) {
     	if(re instanceof antlr4.error.RecognitionException) {
 	        localctx.exception = re;
@@ -1067,16 +1067,16 @@ KofoLangParser.prototype.expr = function(_p) {
             this.state = 65;
             this.match(KofoLangParser.ID);
             break;
-        case KofoLangParser.T__2:
+        case KofoLangParser.T__1:
             localctx = new ParensExprContext(this, localctx);
             this._ctx = localctx;
             _prevctx = localctx;
             this.state = 66;
-            this.match(KofoLangParser.T__2);
+            this.match(KofoLangParser.T__1);
             this.state = 67;
             this.expr(0);
             this.state = 68;
-            this.match(KofoLangParser.T__3);
+            this.match(KofoLangParser.T__2);
             break;
         default:
             throw new antlr4.error.NoViableAltException(this);

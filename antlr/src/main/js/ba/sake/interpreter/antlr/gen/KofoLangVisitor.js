@@ -24,18 +24,6 @@ KofoLangVisitor.prototype.visitStatement = function(ctx) {
 };
 
 
-// Visit a parse tree produced by KofoLangParser#declStatement.
-KofoLangVisitor.prototype.visitDeclStatement = function(ctx) {
-  return this.visitChildren(ctx);
-};
-
-
-// Visit a parse tree produced by KofoLangParser#assignStatement.
-KofoLangVisitor.prototype.visitAssignStatement = function(ctx) {
-  return this.visitChildren(ctx);
-};
-
-
 // Visit a parse tree produced by KofoLangParser#printlnStatement.
 KofoLangVisitor.prototype.visitPrintlnStatement = function(ctx) {
   return this.visitChildren(ctx);
@@ -44,6 +32,18 @@ KofoLangVisitor.prototype.visitPrintlnStatement = function(ctx) {
 
 // Visit a parse tree produced by KofoLangParser#printStatement.
 KofoLangVisitor.prototype.visitPrintStatement = function(ctx) {
+  return this.visitChildren(ctx);
+};
+
+
+// Visit a parse tree produced by KofoLangParser#declStatement.
+KofoLangVisitor.prototype.visitDeclStatement = function(ctx) {
+  return this.visitChildren(ctx);
+};
+
+
+// Visit a parse tree produced by KofoLangParser#assignStatement.
+KofoLangVisitor.prototype.visitAssignStatement = function(ctx) {
   return this.visitChildren(ctx);
 };
 
