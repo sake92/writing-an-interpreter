@@ -43,3 +43,13 @@ target/
 *.zip
 *.tar.gz
 *.rar
+
+
+.idea/
+.bloop/
+.metals/
+.vscode/
+.bsp/
+out/
+
+
