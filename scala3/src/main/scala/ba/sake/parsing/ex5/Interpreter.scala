@@ -2,9 +2,9 @@ package ba.sake.parsing.ex5
 
 /*
 expr      -> term exprOpt*
-exprOpt   -> + term
-term      -> num termOpt*
-termOpt   -> * num
+exprOpt   -> '+' term
+term      -> NUM termOpt*
+termOpt   -> '*' NUM
 */
 
 class Interpreter(ast: Expr):

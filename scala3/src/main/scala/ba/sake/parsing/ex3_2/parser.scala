@@ -3,8 +3,8 @@ package ba.sake.parsing.ex3_2
 import scala.collection.mutable
 
 /*
-expr  -> num exprOpt*
-exprOpt -> + num
+expr  -> NUM exprOpt*
+exprOpt -> '+' NUM
 */
 
 class Parser(allTokens: List[Token]):

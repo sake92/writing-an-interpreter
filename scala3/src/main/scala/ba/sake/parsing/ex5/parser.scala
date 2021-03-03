@@ -4,9 +4,9 @@ import scala.collection.mutable
 
 /*
 expr      -> term exprOpt*
-exprOpt   -> + term
-term      -> num termOpt*
-termOpt   -> * num
+exprOpt   -> '+' term
+term      -> NUM termOpt*
+termOpt   -> '*' NUM
 */
 
 class Parser(allTokens: List[Token]):

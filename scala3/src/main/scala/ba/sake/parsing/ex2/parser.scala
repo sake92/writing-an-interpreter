@@ -2,11 +2,11 @@ package ba.sake.parsing.ex2
 
 /*
 Transformed this left-recursive grammar:
-expr -> expr + num | num
+expr -> expr '+' NUM | NUM
 
 to be non-left-recursive:
-expr    -> num exprOpt
-exprOpt -> + num exprOpt | epsilon
+expr    -> NUM exprOpt
+exprOpt -> '+' NUM exprOpt | epsilon
 */
 
 class Parser(allTokens: List[Token]):

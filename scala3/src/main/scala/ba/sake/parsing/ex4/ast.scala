@@ -1,8 +1,8 @@
 package ba.sake.parsing.ex4
 
 /*
-expr    -> num exprOpt*
-exprOpt -> [+-] num
+expr    -> NUM exprOpt*
+exprOpt -> [+-] NUM
 */
 
 case class Expr(num: Int, exprOpts: Seq[ExprOpt])

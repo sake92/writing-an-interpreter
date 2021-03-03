@@ -1,8 +1,8 @@
 package ba.sake.parsing.ex3
 
 /*
-expr    -> num exprOpt
-exprOpt -> + num exprOpt | epsilon
+expr    -> NUM exprOpt
+exprOpt -> '+' NUM exprOpt | epsilon
 */
 
 case class Expr(num: Int, exprOpt: ExprOpt)

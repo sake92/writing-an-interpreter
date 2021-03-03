@@ -2,17 +2,17 @@ package ba.sake.parsing.ex5
 
 /*
 Original left-recursive, WITHOUT PRECEDENCE RULES grammar:
-expr -> expr + expr | expr * expr | digits
+expr -> expr '+' expr | expr '*' expr | NUM
 
 becomes left-recursive, WITH PRECEDENCE RULES grammar:
-expr    -> expr + term | term
-term    -> term * term | num
+expr    -> expr '+' term | term
+term    -> term '*' term | NUM
 
 becomes NON-left-recursive, WITH PRECEDENCE RULES grammar:
 expr      -> term exprOpt*
-exprOpt   -> + term
-term      -> num termOpt*
-termOpt   -> * num
+exprOpt   -> '+' term
+term      -> NUM termOpt*
+termOpt   -> '*' NUM
 */
 
 case class Expr(term: Term, exprOpts: Seq[ExprOpt])
