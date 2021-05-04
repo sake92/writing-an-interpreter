@@ -6,7 +6,7 @@ expr -> expr '+' expr | expr '*' expr | NUM
 
 becomes left-recursive, WITH PRECEDENCE RULES grammar:
 expr    -> expr '+' term | term
-term    -> term '*' term | NUM
+term    -> term '*' NUM | NUM
 
 becomes NON-left-recursive, WITH PRECEDENCE RULES grammar:
 expr      -> term exprOpt*
