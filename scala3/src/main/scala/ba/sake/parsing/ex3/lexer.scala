@@ -9,22 +9,22 @@ class Lexer(input: String):
     val tokens = mutable.ArrayBuffer.empty[Token]
     var i = 0
     while i < input.length do
-      val pos = i
+      val startPos = i
       val lookahead = input(i)
       if lookahead.isWhitespace then
         i += 1 // ignore whitespace
       else if lookahead == '+' then
         i += 1
-        tokens += Token(Type.Plus, lookahead.toString, pos)
+        tokens += Token(Type.Plus, lookahead.toString, startPos)
       else if lookahead == '*' then
         i += 1
-        tokens += Token(Type.Times, lookahead.toString, pos)
+        tokens += Token(Type.Times, lookahead.toString, startPos)
       else if lookahead.isDigit then
         var text = ""
         while i < input.length && input(i).isDigit do
           text += input(i)
           i += 1
-        tokens += Token(Type.Num, text, pos)
+        tokens += Token(Type.Num, text, startPos)
       else
         error(s"Unknown character '$lookahead' at position $i")
 
@@ -40,7 +40,7 @@ end Lexer
 case class Token(
   tpe: Token.Type,
   text: String,
-  pos: Int
+  startPos: Int
 )
 
 object Token:

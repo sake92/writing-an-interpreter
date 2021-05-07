@@ -18,7 +18,7 @@ class Parser(allTokens: List[Token]):
   def parse(): Unit = 
     expr()
     if lookahead.tpe != Type.EOF then
-      error(s"Unknown token '${lookahead.text}' at position ${lookahead.pos}")
+      error(s"Unknown token '${lookahead.text}' at position ${lookahead.startPos}")
 
   private def expr(): Unit =
     eat(Type.Num)
@@ -33,7 +33,7 @@ class Parser(allTokens: List[Token]):
   
   private def eat(tpe: Type): Unit =
     if lookahead.tpe != tpe then
-      error(s"Expected: $tpe, got: ${lookahead.tpe} at position ${lookahead.pos}")
+      error(s"Expected: $tpe, got: ${lookahead.tpe} at position ${lookahead.startPos}")
     tokens = tokens.tail
     lookahead = tokens.head
   
