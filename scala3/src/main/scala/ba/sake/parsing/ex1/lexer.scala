@@ -24,7 +24,7 @@ class Lexer(input: String):
         while i < input.length && input(i).isDigit do
           text += input(i)
           i += 1
-        tokens += Token(Type.Digits, text, pos)
+        tokens += Token(Type.Num, text, pos)
       else if lookahead.isLetter then // first must be letter
         var text = ""
         while i < input.length && input(i).isLetterOrDigit do
@@ -54,7 +54,7 @@ case class Token(
 
 object Token:
   enum Type:
-    case Digits
+    case Num
     case Plus
     case Times
     case Identifier

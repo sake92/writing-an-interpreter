@@ -19,13 +19,13 @@ class Parser(allTokens: List[Token]):
       res
 
   private def expr(): Expr =
-    val num = eat(Type.Digits)
+    val num = eat(Type.Num)
     Expr(num.text.toInt, exprOpt())
   
   private def exprOpt(): ExprOpt =
     if lookahead.tpe == Type.Plus then
       eat(Type.Plus)
-      val num = eat(Type.Digits)
+      val num = eat(Type.Num)
       ExprOpt.Opt(num.text.toInt, exprOpt())
     else
       ExprOpt.Epsilon

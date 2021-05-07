@@ -9,7 +9,7 @@ class LexerTest extends munit.FunSuite:
     val tokens = lexer.lex()
     assertEquals(
       tokens,
-      List(Token(Digits,"1",0), Token(Plus,"+",1), Token(Digits,"1",2), Token(EOF,"<EOF>",3))
+      List(Token(Num,"1",0), Token(Plus,"+",1), Token(Num,"1",2), Token(EOF,"<EOF>",3))
     )
   }
   test("ignores whitespace") {
@@ -18,7 +18,7 @@ class LexerTest extends munit.FunSuite:
     val tokens = lexer.lex()
     assertEquals(
       tokens,
-      List(Token(Digits,"1",1), Token(Plus,"+",3), Token(Digits,"1",6), Token(EOF,"<EOF>",8))
+      List(Token(Num,"1",1), Token(Plus,"+",3), Token(Num,"1",6), Token(EOF,"<EOF>",8))
     )
   }
   test("lexes identifiers") {

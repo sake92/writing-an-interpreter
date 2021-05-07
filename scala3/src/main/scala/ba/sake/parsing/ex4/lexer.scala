@@ -24,7 +24,7 @@ class Lexer(input: String):
         while i < input.length && input(i).isDigit do
           text += input(i)
           i += 1
-        tokens += Token(Type.Digits, text, pos)
+        tokens += Token(Type.Num, text, pos)
       else
         error(s"Unknown character '$lookahead' at position $i")
 
@@ -45,7 +45,7 @@ case class Token(
 
 object Token:
   enum Type:
-    case Digits
+    case Num
     case Plus
     case Minus
     case EOF

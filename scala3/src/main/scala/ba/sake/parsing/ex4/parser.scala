@@ -21,7 +21,7 @@ class Parser(allTokens: List[Token]):
       res
 
   private def expr(): Expr =
-    val num = eat(Type.Digits)
+    val num = eat(Type.Num)
     Expr(num.text.toInt, exprOpts())
 
   private def exprOpts(): Seq[ExprOpt] =
@@ -30,7 +30,7 @@ class Parser(allTokens: List[Token]):
       val op = if lookahead.tpe == Type.Plus
         then eat(Type.Plus)
         else eat(Type.Minus)
-      val num = eat(Type.Digits)
+      val num = eat(Type.Num)
       opts += ExprOpt(op.tpe, num.text.toInt)
     opts.toSeq
   

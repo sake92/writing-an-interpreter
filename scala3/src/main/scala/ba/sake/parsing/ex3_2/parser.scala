@@ -21,14 +21,14 @@ class Parser(allTokens: List[Token]):
       res
 
   private def expr(): Expr =
-    val num = eat(Type.Digits)
+    val num = eat(Type.Num)
     Expr(num.text.toInt, exprOpts())
   
   private def exprOpts(): Seq[ExprOpt] =
     val opts = mutable.ArrayBuffer.empty[ExprOpt]
     while lookahead.tpe == Type.Plus do
       eat(Type.Plus)
-      val num = eat(Type.Digits)
+      val num = eat(Type.Num)
       opts += ExprOpt(num.text.toInt)
     opts.toSeq
   

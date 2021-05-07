@@ -21,13 +21,13 @@ class Parser(allTokens: List[Token]):
       error(s"Unknown token '${lookahead.text}' at position ${lookahead.pos}")
 
   private def expr(): Unit =
-    eat(Type.Digits)
+    eat(Type.Num)
     exprOpt()
   
   private def exprOpt(): Unit =
     if lookahead.tpe == Type.Plus then
       eat(Type.Plus)
-      eat(Type.Digits)
+      eat(Type.Num)
       exprOpt()
     // else: end recursion, epsilon
   

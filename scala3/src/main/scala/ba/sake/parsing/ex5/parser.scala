@@ -33,14 +33,14 @@ class Parser(allTokens: List[Token]):
     opts.toSeq
 
   private def term(): Term =
-    val num = eat(Type.Digits)
+    val num = eat(Type.Num)
     Term(num.text.toInt, termOpts())
     
   private def termOpts(): Seq[TermOpt] =
     val opts = mutable.ArrayBuffer.empty[TermOpt]
     while lookahead.tpe == Type.Times do
       eat(Type.Times)
-      val num = eat(Type.Digits)
+      val num = eat(Type.Num)
       opts += TermOpt(num.text.toInt)
     opts.toSeq
   
