@@ -7,38 +7,38 @@ class Lexer(input: String):
 
   def lex(): List[Token] =
     val tokens = mutable.ArrayBuffer.empty[Token]
-    var i = 0
-    while i < input.length do
-      val startPos = i
-      val lookahead = input(i)
+    var currentPos = 0
+    while currentPos < input.length do
+      val tokenStartPos = currentPos
+      val lookahead = input(currentPos)
       if lookahead.isWhitespace then
-        i += 1 // ignore whitespace
+        currentPos += 1 // ignore whitespace
       else if lookahead == '+' then
-        i += 1
-        tokens += Token(Type.Plus, lookahead.toString, startPos)
+        currentPos += 1
+        tokens += Token(Type.Plus, lookahead.toString, tokenStartPos)
       else if lookahead == '*' then
-        i += 1
-        tokens += Token(Type.Times, lookahead.toString, startPos)
+        currentPos += 1
+        tokens += Token(Type.Times, lookahead.toString, tokenStartPos)
       else if lookahead.isDigit then
         var text = ""
-        while i < input.length && input(i).isDigit do
-          text += input(i)
-          i += 1
-        tokens += Token(Type.Num, text, startPos)
+        while currentPos < input.length && input(currentPos).isDigit do
+          text += input(currentPos)
+          currentPos += 1
+        tokens += Token(Type.Num, text, tokenStartPos)
       else if lookahead.isLetter then // first must be letter
         var text = ""
-        while i < input.length && input(i).isLetterOrDigit do
-          text += input(i)
-          i += 1
+        while currentPos < input.length && input(currentPos).isLetterOrDigit do
+          text += input(currentPos)
+          currentPos += 1
         val tpe = text match
           case "true"  => Type.True // special casing literals
           case "false" => Type.False
           case _       => Type.Identifier
-        tokens += Token(tpe, text, startPos)
+        tokens += Token(tpe, text, tokenStartPos)
       else
-        error(s"Unknown character '$lookahead' at position $i")
+        error(s"Unknown character '$lookahead' at position $currentPos")
 
-    tokens += Token(Type.EOF, "<EOF>", i) // special end marker
+    tokens += Token(Type.EOF, "<EOF>", currentPos) // special end marker
     tokens.toList
 
   private def error(msg: String): Unit =
@@ -49,7 +49,7 @@ end Lexer
 case class Token(
   tpe: Token.Type,
   text: String,
-  startPos: Int
+  tokenStartPos: Int
 )
 
 object Token:

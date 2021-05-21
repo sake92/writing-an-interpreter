@@ -16,7 +16,7 @@ class Parser(allTokens: List[Token]):
   def parse(): Expr = 
     val res = expr()
     if lookahead.tpe != Type.EOF then
-      error(s"Unknown token '${lookahead.text}' at position ${lookahead.startPos}")
+      error(s"Unknown token '${lookahead.text}' at position ${lookahead.tokenStartPos}")
     else
       res
 
@@ -35,7 +35,7 @@ class Parser(allTokens: List[Token]):
   private def eat(tpe: Type): Token =
     val res = lookahead
     if lookahead.tpe != tpe then
-      error(s"Expected: $tpe, got: ${lookahead.tpe} at position ${lookahead.startPos}")
+      error(s"Expected: $tpe, got: ${lookahead.tpe} at position ${lookahead.tokenStartPos}")
     tokens = tokens.tail
     lookahead = tokens.head
     res
