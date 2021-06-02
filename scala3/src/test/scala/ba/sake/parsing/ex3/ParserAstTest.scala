@@ -22,7 +22,7 @@ class ParserAstTest extends munit.FunSuite:
     )
   }
 
-  def parse(input: String): Expr = 
+  def parse(input: String): Expr =
     val tokens = Lexer(input).lex()
     Parser(tokens).parse()
 

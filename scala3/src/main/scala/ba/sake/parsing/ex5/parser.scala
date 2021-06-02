@@ -14,8 +14,8 @@ class Parser(allTokens: List[Token]):
   
   private var tokens = allTokens
   private var lookahead = tokens.head
-  
-  def parse(): Expr = 
+
+  def parse(): Expr =
     val res = expr()
     if lookahead.tpe != Type.EOF then
       error(s"Unknown token '${lookahead.text}' at position ${lookahead.tokenStartPos}")

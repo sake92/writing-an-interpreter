@@ -13,7 +13,7 @@ class ParserTest extends munit.FunSuite:
     parse("+")
   }
 
-  def parse(input: String): Unit = 
+  def parse(input: String): Unit =
     val tokens = Lexer(input).lex()
     Parser(tokens).parse()
 

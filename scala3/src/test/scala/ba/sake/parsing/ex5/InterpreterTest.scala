@@ -10,7 +10,7 @@ class InterpreterTest extends munit.FunSuite:
     assertEquals(interpret("2*3 + 5"), 11)
   }
 
-  def interpret(input: String): Int = 
+  def interpret(input: String): Int =
     val tokens = Lexer(input).lex()
     val ast = Parser(tokens).parse()
     Interpreter(ast).interpret()
