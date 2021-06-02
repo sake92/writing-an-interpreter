@@ -16,9 +16,6 @@ class Lexer(input: String):
       else if lookahead == '+' then
         currentPos += 1
         tokens += Token(Type.Plus, lookahead.toString, tokenStartPos)
-      else if lookahead == '*' then
-        currentPos += 1
-        tokens += Token(Type.Times, lookahead.toString, tokenStartPos)
       else if lookahead.isDigit then
         var text = ""
         while currentPos < input.length && input(currentPos).isDigit do
@@ -47,7 +44,6 @@ object Token:
   enum Type:
     case Num
     case Plus
-    case Times
     case EOF
 
 class LexException(msg: String) extends RuntimeException(msg)

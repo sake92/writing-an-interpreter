@@ -2,7 +2,6 @@ package ba.sake.parsing.ex3
 
 @main def run(): Unit =
   parse("1 + 2 + 3")
-  parse("1 + 2 * 3") // parse error
 
 def parse(input: String): Unit =
   println("-" * 30)
