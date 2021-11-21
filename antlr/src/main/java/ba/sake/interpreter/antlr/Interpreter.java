@@ -5,7 +5,7 @@ import ba.sake.interpreter.antlr.gen.KofoLangParser;
 
 public class Interpreter extends KofoLangBaseVisitor<Object> {
 
-    private SymbolTable symbolTable;
+    private final SymbolTable symbolTable;
 
     public Interpreter() {
         symbolTable = new SymbolTable();
@@ -84,18 +84,18 @@ public class Interpreter extends KofoLangBaseVisitor<Object> {
     }
 
     private Object visitExpr(KofoLangParser.ExprContext expr) {
-        if (expr instanceof KofoLangParser.IntExprContext)
-            return visitIntExpr((KofoLangParser.IntExprContext) expr);
-        else if (expr instanceof KofoLangParser.StringExprContext)
-            return visitStringExpr((KofoLangParser.StringExprContext) expr);
-        else if (expr instanceof KofoLangParser.IdExprContext)
-            return visitIdExpr((KofoLangParser.IdExprContext) expr);
-        else if (expr instanceof KofoLangParser.ParensExprContext)
-            return visitParensExpr((KofoLangParser.ParensExprContext) expr);
-        else if (expr instanceof KofoLangParser.MulDivExprContext)
-            return visitMulDivExpr((KofoLangParser.MulDivExprContext) expr);
-        else if (expr instanceof KofoLangParser.AddSubExprContext)
-            return visitAddSubExpr((KofoLangParser.AddSubExprContext) expr);
+        if (expr instanceof KofoLangParser.IntExprContext intExprContext)
+            return visitIntExpr(intExprContext);
+        else if (expr instanceof KofoLangParser.StringExprContext stringExprContext)
+            return visitStringExpr(stringExprContext);
+        else if (expr instanceof KofoLangParser.IdExprContext idExprContext)
+            return visitIdExpr(idExprContext);
+        else if (expr instanceof KofoLangParser.ParensExprContext parensExprContext)
+            return visitParensExpr(parensExprContext);
+        else if (expr instanceof KofoLangParser.MulDivExprContext mulDivExprContext)
+            return visitMulDivExpr(mulDivExprContext);
+        else if (expr instanceof KofoLangParser.AddSubExprContext addSubExprContext)
+            return visitAddSubExpr(addSubExprContext);
         else return error();
     }
 

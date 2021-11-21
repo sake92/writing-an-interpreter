@@ -13,8 +13,11 @@ public class Main {
     public static void main(String[] args) throws IOException {
 
         CharStream input;
-        if (args.length > 0) input = CharStreams.fromFileName(args[0]);
-        else { // DEMO INPUT
+        if (args.length > 0) {
+            System.out.println("Running the file: " + args[0]);
+            input = CharStreams.fromFileName(args[0]);
+        } else { // DEMO INPUT
+            System.out.println("Running an example..");
             input = CharStreams.fromString("int x = 5 \n print(x)");
         }
 
