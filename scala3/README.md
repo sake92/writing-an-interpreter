@@ -1,9 +1,5 @@
+# Writing an interpreter by hand, in Scala 3.
 
-# Writing an interpreter by hand
+This code is published as part of the [corresponding blog article](https://www.toptal.com/scala/writing-an-interpreter) at the Toptal Engineering Blog.
 
-Writing an interpreter by hand.  
-In scala3.
-
-
-We don't want our parser to look like this:
-![confused parser](https://i.imgflip.com/30q1jt.png)
+Visit https://www.toptal.com/blog and subscribe to our newsletter to read great articles!
